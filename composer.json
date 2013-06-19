@@ -1,0 +1,22 @@
+{
+	"name": "firelit/minify",
+	"description": "The command line css/js minifier for production builds",
+  "license": "proprietary",
+  "require": {
+		"php": ">=5.4.0",
+		"natxet/CssMin": "dev-master"
+  },
+  "authors": [
+		{
+			"name": "Eric Bigoness",
+			"email": "eric.bigoness@firelit.com",
+			"homepage": "http://www.firelit.com",
+			"role": "Developer"
+		}
+	],
+	"autoload": {
+		"psr-0": {
+			"": [ "includes/" ]
+		}
+	}
+}
