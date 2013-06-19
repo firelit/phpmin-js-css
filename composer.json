@@ -1,7 +1,7 @@
 {
 	"name": "firelit/minify",
 	"description": "The command line css/js minifier for production builds",
-  "license": "proprietary",
+  "license": "MIT",
   "require": {
 		"php": ">=5.4.0",
 		"natxet/CssMin": "dev-master"
