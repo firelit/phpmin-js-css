@@ -41,11 +41,12 @@ function walk($target, $recursive = false) {
 			
 			if (preg_match('/^\./', $next)) continue;
 			
-			if (is_dir($next) && $recursive) {
+			$next = $target . DIRECTORY_SEPARATOR . $next;
+			
+			if (is_dir($next) && $recursive)
 				walk($next, $recursive);
-			} elseif (!is_dir($next)) {
-				minify($target . DIRECTORY_SEPARATOR . $next);
-			}
+			elseif (!is_dir($next))
+				minify($next);
 			
 		}
 		
