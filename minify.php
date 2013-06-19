@@ -1,7 +1,7 @@
 #!/usr/bin/php
 <?PHP
 
-require_once('vendor/autoload.php');
+require_once('vendor/cssmin/CssMin.php');
 
 // Remove script name
 array_shift($argv);
