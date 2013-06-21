@@ -88,7 +88,7 @@ function minify($targetFile) {
 	} elseif (preg_match('/\.js$/i', $targetFile)) {
 		// Javascript
 		
-		exec('java -jar vendor/google/compiler.jar --js '. $targetFile .' --js_output_file '. $newFileName, $out, $res);
+		exec('java -jar '. dirname(__FILE__) .'/vendor/google/compiler.jar --js '. $targetFile .' --js_output_file '. $newFileName, $out, $res);
 		
 	} else // Unknown file type
 		return; 
