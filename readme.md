@@ -1,7 +1,7 @@
 ## Overview
 This is a quick command line CSS & JS minifier. Designed to be run during the build phase of a web app's deployment. It creates a second version of every .js and .css file (with the extension .min.js and .min.css). It's left up to the dev to decide how to reference these minified versions in production.
 
-It uses the [Closure Compilier](https://developers.google.com/closure/compiler/) (by Google) to minify the JavaScript. It uses the [CssMin PHP project](https://code.google.com/p/cssmin/) (maintained via [composer](http://getcomposer.org/)) to minify the css.
+It uses the [Closure Compilier](https://developers.google.com/closure/compiler/) (by Google) to minify the JavaScript. It uses the [CssMin PHP project](https://code.google.com/p/cssmin/) to minify the css.
 
 ## Usage
 - Requires PHP >= 5.4 (earlier versions untested)
