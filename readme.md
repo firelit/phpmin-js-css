@@ -10,7 +10,7 @@ It uses the [Closure Compilier](https://developers.google.com/closure/compiler/)
 ### Command Line Format
 Specify any options and then specify the files or directories that you'd like the minifier to work through.
 
-`php minify.php (options) (file1 (file2 (...)))`
+`php minify.php [options] <file1|dir1> [<file2|dir2> [<...>]]`
 
 ### Command Line Options
 - `-r` : Recurse through any sub-directories that may be present.
