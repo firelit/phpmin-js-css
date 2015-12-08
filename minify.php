@@ -99,7 +99,8 @@ function minify($targetFile) {
 	$before = filesize($targetFile);
 	$after = filesize($newFileName);
 	
-	$change = round( ( $before - $after ) / $before, 2 ) * 100;
+	if ($before == 0) $change = 0;
+	else $change = round( ( $before - $after ) / $before, 2 ) * 100;
 	
 	writeLine($newFileName .' minified (size reduced by '. $change .'%)');
 	
